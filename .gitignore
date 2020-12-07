@@ -1,0 +1,27 @@
+# Eclipse
+.classpath
+.project
+.settings
+eclipsebin
+
+# Ant
+bin
+gen
+build
+out
+lib
+
+# Maven
+target
+pom.xml.*
+release.properties
+dependency-reduced-pom.xml
+
+# IntelliJ
+.idea
+*.iml
+*.iws
+*.ipr
+classes
+
+.DS_Store
