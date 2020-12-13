@@ -32,6 +32,19 @@ public class TypeInferenceDemo {
         }
     }
 
+    /**
+     * upper bounded wildcard example
+     * @param numbers
+     * @return
+     */
+    public static double sumOfList(List<? extends Number> numbers) {
+        double sum = 0.0;
+        for (Number n : numbers) {
+            sum = sum + n.doubleValue();
+        }
+        return sum;
+    }
+
     public static void main(String[] args) {
         List<Box<Integer>> integerBoxes = new ArrayList<>();
         TypeInferenceDemo.addBoxes(new Integer(12), integerBoxes);
